@@ -82,9 +82,12 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 
 
 ### Best Two regressor model
-
+The best regressor model for the Pike data was evaluated to be the regression model with variables L1/L2/L3/H/W; data with these 5 regressors yielded nearly .980 for the adjusted r^2 value.  The second most accurate data came from the model with 4 regressors, with those four variables being L1/L3/H/W.
 
 ## Roach
+
+
+
 
 ### Best Models
 
