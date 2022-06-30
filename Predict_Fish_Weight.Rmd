@@ -1,7 +1,7 @@
 ---
 title: "Weight of Fish"
-author: "Your Name"
-date: "`r Sys.Date()`"  
+author: "Rabi Elkhoury"
+date: "6/30/22"  
 output: 
   html_document:
     number_sections: true
@@ -18,14 +18,27 @@ require(tigerstats)
 require(tidyverse)
 ```
 
+```{r}
+Fish <- read.csv(file  = "Fish.csv")
+```
+
 # Predicting Fish Weight
 
 
 ## Perch
+```{r}
+Perch <- filter(Fish, Species == "Perch")
+Perch <- select(Perch, -Species)
+```
+
+
 
 ### Best Models
 
+
+
 ### Best Two regressor model
+
 
 
 ## Pike
