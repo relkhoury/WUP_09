@@ -52,7 +52,7 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 
 
 ### Best Two regressor model
-The best regressor model is the one with the Height and Weight variables as its two regressors.  The second best regression model is the one with Length3, Height, and Weight as the regressors.
+The best regressor model is the one with the Height and Weight variables as its two regressors.  The second best regression model is the one with Length3, Height, and Width as the regressors.
 
 
 ## Pike
@@ -112,7 +112,7 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 ### Best Two regressor model
 The most accurate regressor model, based on the statistics generated, is the one the 2 regressors length 3 and width, an adjusted r^2 value of nearly .9.  Second to that was the regression model with Width as the sole variable.
 ## Final Summary Statements
-
+Adapting the automated regression model code, we were able to calulate models that best predicted the weight of different species of fish.  For the roach and perch fish, only head/width and length3/width were necessary to predict the fish weight.  However, for the pike fish, all 5 variables (L1, L2, L3, H, W) were required to produce an accurate modeling the species' weight.
 
 
 
