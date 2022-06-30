@@ -110,5 +110,9 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 
 
 ### Best Two regressor model
-
+The most accurate regressor model, based on the statistics generated, is the one the 2 regressors length 3 and width, an adjusted r^2 value of nearly .9.  Second to that was the regression model with Width as the sole variable.
 ## Final Summary Statements
+
+
+
+
