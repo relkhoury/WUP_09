@@ -56,10 +56,33 @@ The best regressor model is the one with the Height and Weight variables as its 
 
 
 ## Pike
+```{r}
+Pike <- filter(Fish, Species == "Pike")
+Pike <- select(Pike, -Species)
+```
 
 ### Best Models
+```{r}
+library(leaps)
+regsubsets.out <-
+    regsubsets(Weight ~ .,
+               data = Pike,
+               nbest = 1,       # 1 best model for each number of predictors
+               nvmax = NULL,    # NULL for no limit on number of variables
+               force.in = NULL, force.out = NULL,
+               method = "exhaustive")
+
+summary.out <- summary(regsubsets.out)
+as.data.frame(summary.out$outmat)
+library(car)
+subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
+```
+
+
+
 
 ### Best Two regressor model
+
 
 ## Roach
 
